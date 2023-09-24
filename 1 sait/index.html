@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  <link rel="stylesheet" href="source/styles/my.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="source/icon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="source/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="source/icon/favicon-16x16.png">
+  <link rel="manifest" href="source/icon/site.webmanifest">
+  <link rel="stylesheet" href="source/styles/video.css">
+
+</head>
+
+<body>
+  <!-- верхнее меню -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <!-- ссылка лого -->
+        <a class="navbar-brand" href="#"><img src="source/file/logo.jpg" alt="" /></a>
+        <!-- кнопка бургера -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- конец кнопки -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" id="Home" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/">Pricing</a>
+            </li>
+            <!-- не рабочая кнопка -->
+            <!-- <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+
+
+  <!-- основной блок для контента-->
+  <section>
+    <div class="bgvideo">
+      <div class="effect"></div>
+      <video src="source/video/финал глянец.mov" type="video/mov" autoplay muted loop></video>
+    </div>
+
+
+
+    <!-- контейнер -->
+    <div class="container-fluid mt-4">
+      <!-- сетка -->
+      <!-- строка -->
+      <div class="row">
+
+
+        <div class="col-lg-1">
+        </div>
+
+
+
+
+        <!-- картинки с функцией перелистывания и контент -->
+        <div class="col-lg-8 col-md-12">
+          <div class="row">
+            <!-- колонки -->
+
+            <!-- автоматическая прокрутка -->
+            <div id="carouselExampleIndicators" class="carousel slide btn-lg my-4" data-bs-ride="true">
+
+              <!-- 3 нижние кнопки переключения -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+
+              <!-- вложенные элементы -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="d-block w-100">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6">
+                        <img src="source/img/1.png" class="w-100">
+                      </div>
+                      <div class='col-lg-6 col-md-6 slide-text'>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, magnam vero possimus dolorem
+                          perspiciatis odit.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="d-block w-100">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 ">
+                        <img src="source/img/5.png" class="w-100">
+                      </div>
+                      <div class='col-lg-6 col-md-6 slide-text'>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, magnam vero possimus dolorem
+                          perspiciatis odit.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="d-block w-100">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6">
+                        <img src="source/img/6.png" class="w-100">
+                      </div>
+                      <div class='col-lg-6 col-md-6'>
+                        <p class="slide-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, magnam vero possimus dolorem
+                          perspiciatis odit.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- кнопка назад -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+
+              <!-- кнопка вперед -->
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+
+            </div>
+
+            <!-- блок контента -->
+
+
+            <div class="col-lg-12 col-ml-12 text-center mt-4">
+              <button type="button" class="btn btn-outline-primary">Primary</button>
+            </div>
+
+            <div class="col-lg-12 col-ml-12 text-center mt-4">
+              <p>
+                Can we help you?
+              </p>
+            </div>
+
+            <div class="col-lg-12 col-ml-12 text-center">
+              <a href="#">
+                <img class="call-anim" style="width: 50px;" src="source/img/инс.png" alt="">
+              </a>
+            </div>
+
+
+
+
+
+            <!-- закрытие колонки -->
+          </div>
+        </div>
+
+
+
+
+        <!-- боковая панель -->
+        <div class="col-lg-3 col-md-12">
+          <div class="row px-4">
+            <div class="col-lg-12 sidebar my-4">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Impedit vitae dolore magni! <a href="#">Learn more</a>
+              </p>
+            </div>
+
+            <div class="col-lg-12 sidebar my-4">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Impedit vitae dolore magni! <a href="#">Learn more</a>
+              </p>
+            </div>
+
+            <div class="col-lg-12 sidebar my-4">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Impedit vitae dolore magni! <a href="#">Learn more</a>
+              </p>
+            </div>
+
+            <div class="col-lg-12 sidebar my-4">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Impedit vitae dolore magni! <a href="#">Learn more</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+      <!-- закрытие строки -->
+    </div>
+    <!-- закрытие контейнера -->
+  </section>
+
+
+
+
+  <!-- нижний блок -->
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 footer-text text-center">
+          <p>Все права защищены</p>
+        </div>
+        <div class="col-lg-4 col-md-12 footer-text text-center">
+          <p>Контакты <br> Работы <br> Прочее</p>
+        </div>
+        <div class="col-lg-4 col-md-12 media-links">
+          <img style="width: 50px; margin-inline: 1em ;" src="source/img/инс.png" alt="">
+          <img style="width: 50px; margin-inline: 1em  ;" src="source/img/тел.png" alt="">
+          <img style="width: 50px; margin-inline: 1em ;" src="source/img/ю.png" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <p>text</p>
+  <!-- подключение джава скрипта -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
